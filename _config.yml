@@ -1,0 +1,31 @@
+title: My Portfolio Website
+description: A personal portfolio website built with Jekyll
+baseurl: "/web.github.io"
+url: "https://meet.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+  blog:
+    output: true
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
